@@ -1,0 +1,373 @@
+@import url(./font-awesome.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875em;
+    background: #f2f2f2;
+    color: #191919;
+    line-height: 1.7em; /*chiều cao dòng trong 1 paragraph*/
+    
+}
+
+*{scroll-behavior: smooth}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Italiana', serif;
+    font-weight: bolder ;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+section{
+    border-bottom: 1px dashed #191919 ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#top-bar{
+    background-color: #191919;
+    color: white;
+    padding: 0px;
+    
+}
+
+
+#top-bar .col-6{
+    padding: 2px;
+}
+
+.banner-left{
+    position: relative;
+    
+}
+
+.banner-left-caption{
+    position: absolute;
+    top:40%; left: 15%;
+    color: white;
+    
+}
+
+.banner-left{
+    position: relative;
+}
+
+
+.banner-left-caption h1{
+    margin-bottom: 0.5em;
+    font-size: 3vw;
+}
+
+.banner-left-caption p{
+    margin-bottom: 1.875em;
+}
+
+.banner-right{
+    position: relative;
+    perspective: px;
+}
+.banner-right-caption{
+    position: absolute;
+    top: 40%;
+    /* transform: translateY(-50%); */
+    width: 100%;
+    color: white;
+}
+
+/* .banner-right-hidden{
+    position: absolute;
+    top: 6%; left: 5%;
+    width: 90%;
+    height: 85%;
+    background-color: #191919e4;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+} */
+
+.banner-right:hover>.banner-right-hidden-caption{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) rotateX(0deg);
+}
+
+.banner-right-hidden-caption{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%; height: 90%;
+    color: white;
+    background-color: #191919e4;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5) rotateX(-180deg);
+    transition: all 1s;
+    padding-top: 3em;
+}
+
+.banner-right-hidden-caption h2{
+    margin-bottom: 0.9375em;
+
+}
+.banner-right-hidden-caption p{
+    margin-bottom: 1.25em;
+    padding: 0 1em;
+}
+
+.btn-light{
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    display:inline-block;
+}
+
+.btn-light:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+#explore h2{
+    margin-top: 35%;
+}
+
+#explore p{
+    margin-top: 1.5625em;
+}
+
+.explore-text{
+    width: 50%;
+    text-align: center;
+    background-color: #dcdcdc;
+    
+}
+
+
+#subscribe input{
+    width: 100%;
+    padding: 8px 10px;
+
+}
+
+#subscribe .col-5{
+    padding-left: 0;
+}
+
+
+#say-hello input, #say-hello textarea{
+    width: 100%;
+    padding: 8px 10px;
+   
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 60px 0px;
+}
+
+.menu-footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+
+    
+}
+
+.menu-footer a:hover{
+    color: #ddd;
+}
+
+.social-icon a{
+    margin: 0.2em;
+    color: aquamarine;
+}
+
+.social-icon a:hover{
+    color: yellow;
+}
+
+.social-icon-black i{
+    color: black;
+    margin-right: 0.2em;
+}
+
+.social-icon-black i:hover{
+    color: rgb(119, 119, 119);
+    /* background-color: black; */
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-black{
+    color: black;
+    font-weight: bolder;
+}
+
+.product{
+    position: relative;
+}
+
+.hidden-box {
+    /* border: 1px solid black; */
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0; top: 80%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.product:hover>.hidden-box{
+    opacity: 1;
+    visibility: visible;
+    top: 70%;
+}
+
+.hidden-box a{
+    margin: 0em 0.5em;
+    background-color: #ddd;
+    width: 2.5em; 
+    height: 2.5em;
+    line-height: 2.5em;
+    display: inline-block;
+    color: #191919;
+}
+
+.hidden-box a:hover{
+    background-color: #191919;
+    color: #ddd;
+    box-shadow: 0em 0em 0.5em #191919;
+}
+
+.btn-dark{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 10px;
+    border: 1px solid black;
+}
+
+.btn-dark:hover{
+    background-color: #fff;
+    color: black;
+}
+
+#about-us p {
+    margin-top: 1.5625em;
+    
+}
+
+#about-us hr{
+    margin-top: 1.5625em;
+}
+
+#page-heading{
+    position: relative;
+
+}
+
+.page-name{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    /* border: 1px solid yellow; */
+}
+
+.page-name h1{
+    font-size:  2rem;
+    margin-bottom: 30px;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.portrait{
+    position: relative;
+}
+
+.black-layer{
+    position: absolute;
+    background-color: #191919cd;
+    left: 0; top: 0;
+    width: 100%; height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.portrait:hover > .black-layer{
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon-circle i{
+    background-color: #f2f2f2;
+    color: #191919;
+    width: 55px; height: 55px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    margin: 0px 5px;
+}
+
+.icon-circle i:hover{
+    color: #f2f2f2;
+    background-color: #191919;
+}
+
+.icon-circle-white i{
+    color: #f2f2f2;
+    background-color: #191919;
+    width: 55px; height: 55px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    margin: 10px 5px;
+}
+
+.icon-circle-white i:hover{
+    background-color: #6a6a6a;
+    color: #ffffff;
+}
+
+
+.shadow {
+    box-shadow: 0px 0px 16px 1px rgba(164,164,164,1);
+    transition: all 0.2s;
+}
+
+.shadow:hover{
+    box-shadow: 0px 0px 16px 1px rgb(211, 210, 210);
+}
+
+.right-number input{
+    width: 30px; height: 33px;
+}
+
+#product p{
+    margin-bottom: 1.5625em;
+}
